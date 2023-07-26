@@ -162,6 +162,7 @@ func main() {
 	data := map[string]interface{}{
 		"type":    records[0]["type"].(string),
 		"name":    records[0]["name"].(string),
+		"proxied": records[0]["proxied"].(bool),
 		"content": string(ip),
 		"ttl":     records[0]["ttl"].(float64),
 	}
